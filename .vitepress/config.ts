@@ -12,15 +12,15 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Documentation', link: '/docs/getting-started' },
+      { text: "Acknowledgements", link: '/acknowledgements/'}
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Documentation',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Getting Started', link: '/docs/getting-started' },
         ]
       }
     ],
