@@ -1,0 +1,8 @@
+{
+    "name": "Remote Random",
+    "author": "The OpenFlier Contributors",
+    "version": "0.0.1",
+    "identifier": "openflier.ext.remoterandom",
+    "description": "Fetches an image from a remote source.",
+    "url": "https://openflier.top/plugins/command-input-plugins/openflier.ext.remoterandom.ofspp"
+}
