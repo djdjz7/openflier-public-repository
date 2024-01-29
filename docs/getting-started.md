@@ -3,12 +3,14 @@ outline: deep
 ---
 
 # Getting Started
+
 1. Download [OpenFlier](/Setup.exe)
 2. Find "OpenFlier.Plugin.dll"
 3. Create a C# Library Project in your preferred way.
 4. Reference "OpenFlier.Plugin.dll"
-5. Modify your *.csproj file as follows:
-~~~xml
+5. Modify your \*.csproj file as follows:
+
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
@@ -20,27 +22,32 @@ outline: deep
 
 
 	<ItemGroup>
-		<ProjectReference Include="PATH\TO\OpenFlier.Plugin.dll">
-			<ExcludeAssets>runtime</ExcludeAssets> // [!code ++]
-			<Private>false</Private> // [!code ++]
-		</ProjectReference>
+		<Reference Include="OpenFlier.Plugin">
+	        <HintPath>PATH\TO\OPENFLIER.PLUGIN.DLL</HintPath>
+	        <Private>false</Private> // [!code ++]
+	        <ExcludeAssets>runtime</ExcludeAssets> // [!code ++]
+        </Reference>
 	</ItemGroup>
 
 </Project>
 
-~~~
-6. Add using to your *.cs file:
-~~~csharp
+```
+
+6. Add using to your \*.cs file:
+
+```csharp
 using OpenFlier.Plugin
-~~~
+```
 
 7. Implement either `ICommandInputPlugin` or `IMqttMessagePlugin`, choose the one you need.
 
 ## Examples
+
 ### `ICommandInputPlugin`
+
 Remember: `static` works!
 
-~~~csharp
+```csharp
 using MQTTnet;
 using MQTTnet.Protocol;
 using MQTTnet.Server;
@@ -67,7 +74,7 @@ namespace RemoteRandom
         };
         public CommandInputPluginInfo GetPluginInfo()
         {
-            return pluginInfo; 
+            return pluginInfo;
         }
 
         public async Task PluginMain(CommandInputPluginArgs args)
@@ -110,11 +117,13 @@ namespace RemoteRandom
         }
     }
 }
-~~~
+```
 
 ### `IMqttServicePlugin`
+
 Mostly not needed.
-~~~csharp
+
+```csharp
 using MQTTnet;
 using MQTTnet.Server;
 using OpenFlier.Plugin;
@@ -159,4 +168,4 @@ namespace DemoPlugin
         }
     }
 }
-~~~
+```
