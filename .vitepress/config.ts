@@ -1,32 +1,33 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "OpenFlier",
   description: "OpenFlier Public Repository",
-  
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
-    logo: '/icon.png',
+    logo: "/icon.png",
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/docs/getting-started' },
-      { text: "Acknowledgements", link: '/acknowledgements/'}
+      { text: "Home", link: "/" },
+      { text: "Documentation", link: "/docs/getting-started" },
+      { text: "Acknowledgements", link: "/acknowledgements/" },
     ],
 
     sidebar: [
       {
-        text: 'Documentation',
+        text: "Documentation",
         items: [
-          { text: 'Getting Started', link: '/docs/getting-started' },
-        ]
-      }
+          { text: "Getting Started", link: "/docs/getting-started" },
+          { text: "How Plugins Work", link: "/docs/how-plugins-work" },
+        ],
+      },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/djdjz7/OpenFlier' }
+      { icon: "github", link: "https://github.com/djdjz7/OpenFlier" },
     ],
   },
-})
+});
