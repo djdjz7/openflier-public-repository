@@ -33,6 +33,21 @@ outline: deep
 
 ```
 
+::: tip
+If you are referencing the OpenFlier.Plugin.dll file instead of referencing
+the OpenFlier.Plugin project, you may also need to add the following content
+to your project file:
+~~~xml
+<ItemGroup>
+	<PackageReference Include="MQTTnet" Version="3.1.2" >
+		<ExcludeAssets>runtime</ExcludeAssets>
+		<Private>true</Private>
+	</PackageReference>
+</ItemGroup>
+~~~
+:::
+
+
 6. Add using to your \*.cs file:
 
 ```csharp
@@ -115,6 +130,11 @@ namespace RemoteRandom
         {
             throw new NotImplementedException();
         }
+
+        public async Task BeforeExit()
+        {
+            return;
+        }
     }
 }
 ```
@@ -163,6 +183,11 @@ namespace DemoPlugin
         }
 
         public void PluginOpenConfig()
+        {
+            return;
+        }
+
+        public async Task BeforeExit()
         {
             return;
         }

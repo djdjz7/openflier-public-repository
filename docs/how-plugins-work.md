@@ -21,3 +21,6 @@ Plugin cache relies on PluginIdentifier, so make sure yours does not contradict 
 :::warning
 OpenFlier only create an instance of the first class with the interface `ICommandInputPlugin` or `IMqttServicePugin`, and the order is determined by `Assembly.GetTypes()`. It is suggest that one plugin file only contains one plugin interface implementation.
 :::
+
+## The `BeforeExit` Hook <Badge type="tip" text=">1.1.0" />
+Both `ICommandInputPlugin` and `IMqttServicePlugin` have a `BeforeExit` hook which will be executed before the application fully quits. It is executed **AFTER** the MQTT Server is shut down. 
