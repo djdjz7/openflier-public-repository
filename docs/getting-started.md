@@ -4,7 +4,7 @@ outline: deep
 
 # Getting Started
 
-1. Download [OpenFlier](/Setup.exe)
+1. Download [OpenFlier DevUtils](/DevUtils.7z)
 2. Find "OpenFlier.Plugin.dll"
 3. Create a C# Library Project in your preferred way.
 4. Reference "OpenFlier.Plugin.dll"
