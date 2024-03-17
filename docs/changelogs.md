@@ -10,6 +10,7 @@ outline: deep
 - Fix: Horizontal scrollbar is reversed.
 - Fix: CommandInput user is not updated after config has been modified.
 - Fix: Now kills OpenFlier before installing plugins.
+- Fix: Auto update failed.
 - Misc: Removed debug message.
 - Misc: Removed Insider label.
 
