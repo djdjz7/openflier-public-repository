@@ -22,6 +22,7 @@ export default defineConfig({
         items: [
           { text: "Getting Started", link: "/docs/getting-started" },
           { text: "How Plugins Work", link: "/docs/how-plugins-work" },
+          { text: "Changelogs", link: "/docs/changelogs" },
         ],
       },
     ],
