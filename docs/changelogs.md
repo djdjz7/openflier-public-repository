@@ -5,6 +5,7 @@
 - UI: ConnectCode Label now uses StyleSet01 of Inter.
 - Fix: Horizontal scrollbar is reversed.
 - Fix: CommandInput user is not updated after config has been modified.
+- Fix: Now kills OpenFlier before installing plugins.
 - Misc: Removed debug message.
 - Misc: Removed Insider label.
 
