@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Changelogs
 ## Latest Version
 ### 1.1.1
