@@ -4,6 +4,13 @@ outline: deep
 
 # Changelogs
 ## Latest Version
+### 1.1.2
+- Feature: Kill other processes and continue.
+- Feature: Revert text color.
+- UI: Refactored settings UI.
+- UI: ConnectCode Label in system tray now uses StyleSet01 of Inter.
+
+## Earlier Versions
 ### 1.1.1
 - Feature: Language switch.
 - UI: ConnectCode Label now uses StyleSet01 of Inter.
@@ -14,7 +21,6 @@ outline: deep
 - Misc: Removed debug message.
 - Misc: Removed Insider label.
 
-## Earlier Versions
 ### 1.1.0
 - **BREAKING CHANGE:** Modified `ICommandInputPlugin` and `IMqttServicePlugin` to add `BeforeExit()` hook.
 - Feature: Detect currently running processes.
